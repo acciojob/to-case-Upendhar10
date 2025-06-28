@@ -1,5 +1,11 @@
 function toCase(text) {
   // write your code here
+
+	if(text.trim() === " ") return "-";
+
+	return (text.toLowerCase() + " ".concat(text.toUpperCase())).replace(" ", "-")
+;
+	
 }
 
 // DO not change the code below
