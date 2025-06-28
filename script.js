@@ -3,8 +3,11 @@ function toCase(text) {
 
 	if(text.trim() === " ") return "-";
 
-	return (text.toLowerCase() + " ".concat(text.toUpperCase())).replace(" ", "-")
-;
+	let LowerText=text.toLowerCase();
+	let UpperText=text.toUpperCase(); 
+
+	return LowerText+"-"+UpperText;
+
 	
 }
 
